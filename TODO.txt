@@ -1,3 +1,0 @@
-- Make the whole thing SSL and turn on secure cookies.
-- Add grunt minification of javascript and css. Find a tool to inline HTML templates.
-- Get rid of the stupid entities in the API, the validation can be done by the repository, and they add little value.

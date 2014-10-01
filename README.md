@@ -1,12 +1,18 @@
-# BUILD\RUN INSTRUCTIONS
-
+### BUILD\RUN INSTRUCTIONS
+```sh
 > npm install
 > node api/server.js
 > open http://localhost:8080
+```
 
-
-
-
+### WHAT ISNT FINISHED YET
+- Make the whole thing SSL and turn on secure cookies.
+- Separate the HTTP session state into external database.
+- Grunt build to minify client scripts, css and inline templates.
+- A proper CSS preprocessor like LESS.
+- Jasmine unit tests for UI & Mocha unit tests for API.
+- Probably could make the API data layer more intuitive (IE: entities are POJOS).
+- Validate data in client (the API does perform JSON schema based validation), but the client experience is not finished.
 
 
 
@@ -34,7 +40,3 @@ You will find the base data file in ```/data```
 * Fully responsive UI
 * Unit Tests of the API
 * Functional Tests of the UI
-
-
-
-
