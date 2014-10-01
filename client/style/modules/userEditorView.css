@@ -1,0 +1,29 @@
+/* In a real app I would probably use SMACS with SASS or LESS to maintain large stylesheets. */
+
+#userEditorViewModel {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#userEditorViewModel .leftPanel {
+    margin-left: 20px;
+    width: auto;
+}
+
+#userEditorViewModel .rightPanel {
+    margin-left: 20px;
+    width: auto;
+}
+
+#userEditorViewModel .balance {
+    color: green;
+    font-weight: bolder;
+}
+
+#userEditorViewModel .update {
+    float: right;
+}
+
+#userEditorViewModel input {
+    color: black;
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "guid": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "balance": {
+            "type": "string"
+        },
+        "picture": {
+            "type": "string"
+        },
+        "age": {
+            "type": "integer"
+        },
+        "eyeColor": {
+            "type": "string",
+            "enum": [
+                "blue",
+                "brown",
+                "green",
+                "gray"
+            ]
+        },
+        "name": {
+            "type": "object",
+            "properties": {
+                "first": {
+                    "type": "string"
+                },
+                "last": {
+                    "type": "string"
+                }
+            },
+            "required": ["first", "last"]
+        },
+        "company": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        }
+    },
+    "required": ["_id"]
+}

@@ -1,0 +1,10 @@
+#appViewModel .header {
+    background-color: black;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#appViewModel .logout {
+    float: right;
+    margin: 5px;
+}

@@ -1,0 +1,20 @@
+<div id="loginView" data-bind="visible: isVisible">
+    <form class="pure-form pure-form-aligned form">
+        <div class="pure-control-group">
+            <label for="loginView-username">Username</label>
+            <input id="loginView-username" type="text" data-bind="value: username" />
+        </div>
+
+        <div class="pure-control-group">
+            <label for="loginView-password">Password</label>
+            <input id="loginView-password" type="password" data-bind="value: password" />
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-3-5"></div>
+            <div class="pure-u-2-5">
+                <input class="pure-button pure-button-primary login" type="button" value="Login" data-bind="click: login" />
+            </div>
+        </div>
+    </form>
+</div>

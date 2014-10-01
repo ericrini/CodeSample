@@ -1,0 +1,64 @@
+<div id="userEditorViewModel" class="pure-g" data-bind="visible: isVisible">
+    <div class="pure-u-1-2 leftPanel">
+        <!-- ko with: userViewModel -->
+            <img width="300" alt="portrait" data-bind="attr: { src: picture } " />
+            <div>
+                <h4>My Current Balance</h4>
+                <h1 class="balance" data-bind="text: balance"></h1>
+            </div>
+        <!-- /ko -->
+
+    </div>
+
+    <div class="pure-u-1-2 rightPanel">
+        <form class="pure-form pure-form-aligned">
+            <!-- ko with: userViewModel -->
+            <div class="pure-control-group">
+                <label for="userViewModel-first">First Name</label>
+                <input id="userViewModel-first" type="text" data-bind="value: name.first, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-last">Last Name</label>
+                <input id="userViewModel-last" type="text" data-bind="value: name.last, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-company">Company Name</label>
+                <input id="userViewModel-company" type="text" data-bind="value: company, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-email">Email</label>
+                <input id="userViewModel-email" type="text" data-bind="value: email, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-phone">Primary Phone Number</label>
+                <input id="userViewModel-phone" type="text" data-bind="value: phone, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-address">Address</label>
+                <input id="userViewModel-address" type="text" data-bind="value: address, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-age">Age</label>
+                <input id="userViewModel-age" type="number" data-bind="value: age, attr: { disabled: $parent.isDisabled }" />
+            </div>
+
+            <div class="pure-control-group">
+                <label for="userViewModel-eyeColor">Eye Color</label>
+                <select id="userViewModel-eyeColor" data-bind="options: $parent.eyeColors, value: eyeColor, attr: { disabled: $parent.isDisabled }">
+                </select>
+            </div>
+            <!-- /ko -->
+
+            <button class="pure-button pure-button-primary update" data-bind="click: edit">
+                <i class="fa fa-cog"></i>
+                <span data-bind="text: status"></span>
+            </button>
+        </form>
+    </div>
+</div>

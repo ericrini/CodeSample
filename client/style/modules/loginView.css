@@ -1,0 +1,8 @@
+#loginView {
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+#loginView form {
+    margin-left: 20px;
+}

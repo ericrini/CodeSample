@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Login",
+    "type": "object",
+    "properties": {
+        "_id": {
+            "type": "string"
+        },
+        "username": {
+            "type": "string"
+        },
+        "salt": {
+            "type": "string"
+        },
+        "hash": {
+            "type": "string"
+        },
+        "userId": {
+            "type": "string"
+        },
+        "required": ["_id", "username", "password", "userId"]
+    }
+}
